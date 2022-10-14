@@ -430,10 +430,10 @@ export interface LedOption {
 }
 
 export declare class Led {
-    constructor(option: number | LedOption);
+    constructor(option: LedOption['pin'] | LedOption);
 
     id: string;
-    pin: number;
+    pin: number | string;
 
     on(): void;
     off(): void;
